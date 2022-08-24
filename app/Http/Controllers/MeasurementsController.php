@@ -88,5 +88,16 @@ class MeasurementsController extends Controller
     return redirect('/measurements');
   } //fim da update
 
+  public function edit($id)
+  {
+    //busca pela medida
+    $measurement = Measurements::findOrFail($id);
+
+    //retorna a view com a medida encontrada
+    return view('/measurements/form',
+              ['measurement' => $measurement]);
+
+  } //fim do show
+
 
 } // fim da classe

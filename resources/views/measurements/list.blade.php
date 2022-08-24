@@ -38,7 +38,7 @@
                     <th scope="row">{{$measurement->id}}</th>
                     <td>{{$measurement->date}}</td>
                     <td>
-                      <button class="btn btn-secondary">Editar</button>
+                      <a href="/measurements/edit/{{$measurement->id}}" class="btn btn-secondary" role="button">Editar</a>
                       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmationModal" data-measurement-id="{{$measurement->id}}">
                         Excluir
                       </button>
