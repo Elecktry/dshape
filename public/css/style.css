@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Happy+Monkey&display=swap');
+
+:root{
+    /* PALETA DE CORES DO SITE */
+    --branco:#e4e4e4;
+    --cinza:#4b4843;
+    --verdeMusgo:#618d60;
+    --verdeOliva:#54ac54;
+    --verdeLimao:#70b46c;
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/* HOME DO SITE */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    background: var(--verdeOliva);
+    width: auto;
+    height: 365px;
+}
+.header-esq{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 60px;
+    margin-bottom: 110px;
+    color:var(--branco);
+}
+.header-dir{
+    margin-top: 78px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 290px;
+    margin-bottom: 100px;
+}
+
+.main-titulo{
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: left;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 34px;
+    color:var(--verdeMusgo);
+}
+.main-conteudo{
+    color: var(--cinza);
+    margin-top: 26px;
+    margin-left: 100px;
+    text-align: left;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 20px;
+}
+
+.main-img{
+    margin-top:100px;
+    margin-right: 70px;
+}
+
+.main-btn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.btn-inputs{
+    font-size: 20px;
+    font-family: 'Happy Monkey', cursive;
+    border: none;
+    width: 180px;
+    height: 60px;
+    background-color: var(--verdeLimao);
+    color: var(--branco);
+}
+
+
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 266px;
+    background-color: var(--verdeOliva);
+}
+
+.footer-conteudo{
+    position: absolute;
+    color: var(--branco);
+    text-align: center;
+    font-size: 15px;
+    top: 20%;
+    left:  7%;
+    right: 7%;
+    font-family: 'Happy Monkey', cursive;
+}
+.footer-logo{
+    position: absolute;
+    top: 50%;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 60px;
+    margin-bottom: 140px;
+    color:var(--branco);
+}

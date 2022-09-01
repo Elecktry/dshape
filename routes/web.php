@@ -38,5 +38,5 @@ Route::get('/measurements/edit/{id}',
 [MeasurementsController::class,'edit']);
 
 //Rota que altera uma medida no banco de dados 
-Route::put('/measurementes/{id}', 
+Route::put('/measurements/{id}', 
     [MeasurementsController::class,'update']);

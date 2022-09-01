@@ -18,7 +18,16 @@
             </div>
             <div class="card-body">
               <div class="container px-3 my-3">
-                <form action="/measurements/new" method="POST">
+                @if (isset($measurement))
+                <form action="/measurements/{{$measurement->id}}" method="POST">
+                  @method('PUT')
+                  
+              @else
+              <form action="/measurements/new" method="POST">
+           
+              @endif
+                @csrf
+             
                   @csrf
                   {{-- Data da Medição --}}
                   <div class="form-floating mb-3">
