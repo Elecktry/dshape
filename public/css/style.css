@@ -14,6 +14,7 @@
     --verdeLimao:#70b46c;
 }
 
+
 [data-anime]{
     opacity: 0;
     transition: .3s;
@@ -128,4 +129,70 @@
     font-size: 60px;
     margin-bottom: 140px;
     color:var(--branco);
+}
+
+
+/* Pagina de criar conta */
+.conteudo{
+    height: 100vh;
+    width: auto;
+    position: relative;
+    background-color: bisque;
+}
+
+.main-signup{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--verdeOliva);
+}
+
+.signup-esq{
+    width: 433px;
+    height: 100%;
+}
+
+.signup-esq h1{
+    color: var(--branco);
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.text-signup{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+   padding: 100px;
+}
+
+.text-signup p{
+    margin-top: 120px;
+    margin-bottom: 100px ;
+}
+
+.text-signup button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--branco);
+    border-radius: 21%;
+    border: 1px solid var(--branco);
+    width: 137px;
+    height: 46px;
+    left: 301px;
+    top: 524px;
+    border-radius: 27px;
+}
+
+.text-signup button:hover{
+    color: var(--branco);
+}
+
+.signup-dir{
+    background-color: var(--branco);
 }
