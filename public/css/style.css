@@ -1,38 +1,41 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Happy+Monkey&display=swap');
 
-:root{
+:root {
     /* PALETA DE CORES DO SITE */
-    --branco:#e4e4e4;
-    --cinza:#4b4843;
-    --verdeMusgo:#618d60;
-    --verdeOliva:#54ac54;
-    --verdeLimao:#70b46c;
+    --branco: #ffffff;
+    --branco-gelo: #e4e4e4;
+    --cinza: #4b4843;
+    --verdeMusgo: #618d60;
+    --verdeOliva: #54ac54;
+    --verdeLimao: #70b46c;
 }
 
 
-[data-anime]{
+[data-anime] {
     opacity: 0;
     transition: .3s;
 }
 
-[data-anime="left"]{
+[data-anime="left"] {
     transform: translate3d(-50, 0, 0);
 }
-[data-anime="right"]{
+
+[data-anime="right"] {
     transform: translate3d(50, 0, 0);
 }
-[data-anime].animate{
+
+[data-anime].animate {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
 }
 
 /* HOME DO SITE */
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,17 +45,19 @@
     width: auto;
     height: 365px;
 }
-.header-esq{
+
+.header-esq {
     font-family: 'Gochi Hand', cursive;
     font-size: 60px;
     margin-bottom: 110px;
-    color:var(--branco);
+    color: var(--branco);
 }
-.header-dir{
+
+.header-dir {
     margin-top: 78px;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,15 +65,16 @@
     margin-bottom: 100px;
 }
 
-.main-titulo{
+.main-titulo {
     margin-top: 100px;
     margin-left: 100px;
     text-align: left;
     font-family: 'Happy Monkey', cursive;
     font-size: 34px;
-    color:var(--verdeMusgo);
+    color: var(--verdeMusgo);
 }
-.main-conteudo{
+
+.main-conteudo {
     color: var(--cinza);
     margin-top: 26px;
     margin-left: 100px;
@@ -77,12 +83,12 @@
     font-size: 20px;
 }
 
-.main-img{
-    margin-top:100px;
+.main-img {
+    margin-top: 100px;
     margin-right: 70px;
 }
 
-.main-btn{
+.main-btn {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -90,7 +96,8 @@
     margin-top: 50px;
     margin-right: 100px;
 }
-.btn-inputs{
+
+.btn-inputs {
     font-size: 20px;
     font-family: 'Happy Monkey', cursive;
     border: none;
@@ -101,7 +108,7 @@
 }
 
 
-.footer{
+.footer {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -112,74 +119,74 @@
     background-color: var(--verdeOliva);
 }
 
-.footer-conteudo{
+.footer-conteudo {
     position: absolute;
     color: var(--branco);
     text-align: center;
     font-size: 15px;
     top: 20%;
-    left:  7%;
+    left: 7%;
     right: 7%;
     font-family: 'Happy Monkey', cursive;
 }
-.footer-logo{
+
+.footer-logo {
     position: absolute;
     top: 50%;
     font-family: 'Gochi Hand', cursive;
     font-size: 60px;
     margin-bottom: 140px;
-    color:var(--branco);
+    color: var(--branco);
 }
 
 
 /* Pagina de criar conta */
-.conteudo{
+.conteudo-signup {
+    display: flex;
     height: 100vh;
-    width: auto;
-    position: relative;
-    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco-gelo);
 }
 
-.main-signup{
+.main-signup {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    justify-content: center;
     background-color: var(--verdeOliva);
 }
 
-.signup-esq{
+.signup-esq {
     width: 433px;
     height: 100%;
 }
 
-.signup-esq h1{
+.signup-esq h1 {
+    text-align: center;
+    font-size: 25pt;
     color: var(--branco);
-    position: absolute;
-    left: 10%;
-    top: 30%;
+
 }
 
-.text-signup{    
+.text-signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--branco);
-   padding: 100px;
+    padding: 100px;
 }
 
-.text-signup p{
-    margin-top: 120px;
-    margin-bottom: 100px ;
+.text-signup p {
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
-.text-signup button{
+.text-signup button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--branco);
+    color: var(--branco);
     border-radius: 21%;
     border: 1px solid var(--branco);
     width: 137px;
@@ -189,10 +196,76 @@
     border-radius: 27px;
 }
 
-.text-signup button:hover{
-    color: var(--branco);
+.text-signup button:hover {
+    background: var(--branco);
+    color: var(--verdeOliva);
+    border: 1px solid var(--verdeOliva);
 }
 
-.signup-dir{
+.socias-signup{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.cicle-socias {
+    width: 52.24px;
+    height: 50px;
+    left: 907px;
+    top: 344px;
+    border-radius: 100%;
+    background: var(--branco);
+    border: 1px solid var(--verdeOliva)
+}
+
+.signup-dir {
+    padding: 90px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: var(--branco);
+}
+
+.text-dir{
+    padding-left: 20px;
+    text-align: center;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 45px;
+    padding: 20px;
+    width: 350px;
+    gap: 10px;
+}
+.form-signup input{
+    background-color: var(--branco-gelo);
+}
+
+.btn-signup {
+    margin-left: 80px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    border-radius: 21%;
+    background-color: var(--verdeOliva);
+    border: 1px solid var(--verdeOliva);
+    width: 137px;
+    height: 46px;
+    left: 301px;
+    top: 524px;
+    border-radius: 27px;
+}
+
+.btn-signup:hover {
+    background-color: var(--branco);
+    border: 1px solid var(--verdeOliva);
+    color: var(--verdeOliva);
 }

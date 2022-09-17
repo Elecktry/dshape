@@ -1,28 +1,45 @@
 @extends('./layouts/main')
 
 @section('container')
-<div class="conteudo">
-    
-    <div class="main-signup">
-        <div class="signup-esq">
-            <h1>Welcome back!</h1>
-            <div class="text-signup">
-                
-                <p>Lorem ipsum, dolor sit amet<br>consectetur adipisicing elit.</p>
-                <button class="btn">Signup</button>
-            </div>
-        </div>
-        <div class="signup-dir">
-            <h1>Create Account</h1>
-            <div class="socias-signup">
+    <div class="conteudo-signup">
 
+        <div class="main-signup">
+            <div class="signup-esq">
+                <div class="text-signup">
+                    <h1>Welcome back!</h1>
+                    <p>Lorem ipsum, dolor sit amet<br>consectetur adipisicing elit.</p>
+                    <button class="btn">Signup</button>
+                </div>
             </div>
-            <p>OR USE YOUR EMAIL FOR REGISTRATION:</p>
-            <div class="form-signup">
+            <div class="signup-dir">
+                <div class="text-dir">
+                    <h1>Create Account</h1>
+                    <div class="socias-signup">
+                        <div class="cicle-socias"></div>
+                        <div class="cicle-socias"></div>
+                        <div class="cicle-socias"></div>
+                    </div>
+                    <p>OR USE YOUR EMAIL FOR REGISTRATION:</p>
+                </div>
+                <div>
+                    <form class="form-signup">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Confirm Password</label>
+                        </div>
+                        <button type="submit" class="btn btn-signup">Submit</button>
+                    </form>
 
+                </div>
             </div>
-            <button class="btn"></button>
         </div>
     </div>
-</div>
 @endsection
