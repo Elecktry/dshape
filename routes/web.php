@@ -26,6 +26,10 @@ Route::get('/measurements', [MeasurementsController::class,'index']);
 Route::get('/signup', function () {
     return view('measurements/signup');
 });
+//Rota que abre a tela de criar conta 
+Route::get('/login', function () {
+    return view('measurements/login');
+});
 
 // Rota que abre o formulário para cadastrar uma nova medida
 Route::get('/measurements/new', function () {

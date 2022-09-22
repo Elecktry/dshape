@@ -269,3 +269,18 @@
     border: 1px solid var(--verdeOliva);
     color: var(--verdeOliva);
 }
+
+/* PAGINA DE LOGIN */
+.main-login{
+    background-color: var(--branco-gelo);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+   padding: 60px; 
+   padding-inline: 100px;
+}
