@@ -15,25 +15,6 @@
     --verdeLimao: #70b46c;
 }
 
-
-[data-anime] {
-    opacity: 0;
-    transition: .3s;
-}
-
-[data-anime="left"] {
-    transform: translate3d(-50, 0, 0);
-}
-
-[data-anime="right"] {
-    transform: translate3d(50, 0, 0);
-}
-
-[data-anime].animate {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
 /* HOME DO SITE */
 .header {
     display: flex;
@@ -55,6 +36,11 @@
 
 .header-dir {
     margin-top: 78px;
+}
+
+.btn-inputs a{
+    text-decoration: none;
+    color: var(--branco);
 }
 
 .main {
@@ -283,4 +269,12 @@
 .card-login{
    padding: 60px; 
    padding-inline: 100px;
+}
+
+
+
+/* GRAFICO CANVAS */
+.cardChart{
+    width: 400px;
+    height: 250px;
 }
